@@ -1,0 +1,34 @@
+package codex
+
+import "github.com/openai/codex/sdk/go/protocol"
+
+// ApprovalPolicy is a typed alias for common approval policy values.
+type ApprovalPolicy = string
+
+const (
+	ApprovalPolicyNever     ApprovalPolicy = "never"
+	ApprovalPolicyOnFailure ApprovalPolicy = "on-failure"
+	ApprovalPolicyOnRequest ApprovalPolicy = "on-request"
+	ApprovalPolicyUntrusted ApprovalPolicy = "untrusted"
+)
+
+// SandboxMode is a typed alias for simple sandbox mode values.
+type SandboxMode = protocol.SandboxMode
+
+const (
+	SandboxModeReadOnly         SandboxMode = protocol.SandboxModeReadOnly
+	SandboxModeWorkspaceWrite   SandboxMode = protocol.SandboxModeWorkspaceWrite
+	SandboxModeDangerFullAccess SandboxMode = protocol.SandboxModeDangerFullAccess
+)
+
+// ReasoningEffort is a typed alias for standard effort values.
+type ReasoningEffort = protocol.ReasoningEffort
+
+const (
+	ReasoningEffortNone    ReasoningEffort = "none"
+	ReasoningEffortMinimal ReasoningEffort = "minimal"
+	ReasoningEffortLow     ReasoningEffort = "low"
+	ReasoningEffortMedium  ReasoningEffort = "medium"
+	ReasoningEffortHigh    ReasoningEffort = "high"
+	ReasoningEffortXHigh   ReasoningEffort = "xhigh"
+)
