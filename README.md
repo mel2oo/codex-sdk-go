@@ -106,6 +106,8 @@ client, err := codex.NewClient(ctx, codex.WithWs(server.URL()), codex.WithWsToke
 
 For tests and custom embedding, pass an explicit `rpc.Transport` with `WithTransport`.
 
+See `examples/ws` for a complete runnable example that starts a WebSocket app-server with capability-token auth and connects a WebSocket client to it.
+
 ## Streaming
 
 Use `RunStreamed` to receive notifications as the turn progresses.
