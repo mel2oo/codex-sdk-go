@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/openai/codex/sdk/go/examples/internal/testutil"
-	"github.com/openai/codex/sdk/go/protocol"
+	"github.com/mel2oo/codex-sdk-go/examples/internal/testutil"
+	"github.com/mel2oo/codex-sdk-go/protocol"
 )
 
 func TestMainReplay(t *testing.T) {

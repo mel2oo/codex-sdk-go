@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/openai/codex/sdk/go/protocol"
+	"github.com/mel2oo/codex-sdk-go/protocol"
 )
 
 // ThreadListOptions configures a thread/list request.

@@ -1,6 +1,6 @@
 package codex
 
-import "github.com/openai/codex/sdk/go/protocol"
+import "github.com/mel2oo/codex-sdk-go/protocol"
 
 // ApprovalPolicy is a typed alias for common approval policy values.
 type ApprovalPolicy = string

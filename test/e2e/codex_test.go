@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	codex "github.com/openai/codex/sdk/go"
-	"github.com/openai/codex/sdk/go/test"
+	codex "github.com/mel2oo/codex-sdk-go"
+	"github.com/mel2oo/codex-sdk-go/test"
 )
 
 func TestRealCodexHighLevelCoverageMatrix(t *testing.T) {

@@ -13,9 +13,9 @@ import (
 	"testing"
 	"time"
 
-	codex "github.com/openai/codex/sdk/go"
-	"github.com/openai/codex/sdk/go/protocol"
-	"github.com/openai/codex/sdk/go/rpc"
+	codex "github.com/mel2oo/codex-sdk-go"
+	"github.com/mel2oo/codex-sdk-go/protocol"
+	"github.com/mel2oo/codex-sdk-go/rpc"
 )
 
 // LockedBuffer is a concurrency-safe buffer for app-server stderr capture.

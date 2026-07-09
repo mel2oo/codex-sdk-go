@@ -6,7 +6,7 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/openai/codex/sdk/go/protocol"
+	"github.com/mel2oo/codex-sdk-go/protocol"
 )
 
 // AutoApproveHandler accepts every approval request it can.

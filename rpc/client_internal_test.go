@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/openai/codex/sdk/go/protocol"
+	"github.com/mel2oo/codex-sdk-go/protocol"
 )
 
 func TestClientInternals(t *testing.T) {

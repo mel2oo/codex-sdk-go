@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/openai/codex/sdk/go/protocol"
+	"github.com/mel2oo/codex-sdk-go/protocol"
 )
 
 func TestClientCall(t *testing.T) {

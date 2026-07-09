@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/openai/codex/sdk/go/rpc"
+	"github.com/mel2oo/codex-sdk-go/rpc"
 )
 
 func TestRetryableErrorHelpers(t *testing.T) {

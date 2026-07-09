@@ -631,7 +631,7 @@ func renderClientRequests(methods []rpcMethod, codexCommit string) []byte {
 	var b strings.Builder
 	b.WriteString(generatedHeader(codexCommit))
 	b.WriteString("package rpc\n\n")
-	b.WriteString("import (\n\t\"context\"\n\t\"encoding/json\"\n\n\t\"github.com/openai/codex/sdk/go/protocol\"\n)\n\n")
+	b.WriteString("import (\n\t\"context\"\n\t\"encoding/json\"\n\n\t\"github.com/mel2oo/codex-sdk-go/protocol\"\n)\n\n")
 
 	b.WriteString("// ClientRequests exposes typed JSON-RPC calls supported by the app-server.\n")
 	b.WriteString("type ClientRequests interface {\n")
@@ -673,7 +673,7 @@ func renderServerRequests(methods []rpcMethod, codexCommit string) []byte {
 	var b strings.Builder
 	b.WriteString(generatedHeader(codexCommit))
 	b.WriteString("package rpc\n\n")
-	b.WriteString("import (\n\t\"context\"\n\t\"encoding/json\"\n\t\"fmt\"\n\n\t\"github.com/openai/codex/sdk/go/protocol\"\n)\n\n")
+	b.WriteString("import (\n\t\"context\"\n\t\"encoding/json\"\n\t\"fmt\"\n\n\t\"github.com/mel2oo/codex-sdk-go/protocol\"\n)\n\n")
 
 	b.WriteString("// ServerRequestHandler handles requests initiated by the app-server.\n")
 	b.WriteString("type ServerRequestHandler interface {\n")
@@ -713,7 +713,7 @@ func renderNotifications(notifications []rpcNotification, codexCommit string) []
 	var b strings.Builder
 	b.WriteString(generatedHeader(codexCommit))
 	b.WriteString("package rpc\n\n")
-	b.WriteString("import (\n\t\"encoding/json\"\n\n\t\"github.com/openai/codex/sdk/go/protocol\"\n)\n\n")
+	b.WriteString("import (\n\t\"encoding/json\"\n\n\t\"github.com/mel2oo/codex-sdk-go/protocol\"\n)\n\n")
 
 	b.WriteString("// Notification represents a typed server notification.\n")
 	b.WriteString("type Notification struct {\n\tMethod string\n\tParams any\n\tRaw json.RawMessage\n}\n\n")

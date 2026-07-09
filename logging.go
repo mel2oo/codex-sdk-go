@@ -4,7 +4,7 @@ import (
 	"io"
 	"log/slog"
 
-	"github.com/openai/codex/sdk/go/rpc"
+	"github.com/mel2oo/codex-sdk-go/rpc"
 )
 
 func resolveLogger(logger *slog.Logger) *slog.Logger {

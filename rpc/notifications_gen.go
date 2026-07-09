@@ -7,7 +7,7 @@ package rpc
 import (
 	"encoding/json"
 
-	"github.com/openai/codex/sdk/go/protocol"
+	"github.com/mel2oo/codex-sdk-go/protocol"
 )
 
 // Notification represents a typed server notification.

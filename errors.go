@@ -6,7 +6,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/openai/codex/sdk/go/rpc"
+	"github.com/mel2oo/codex-sdk-go/rpc"
 )
 
 // ErrOverloaded identifies retryable overload or server-busy failures.

@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/openai/codex/sdk/go/protocol"
-	"github.com/openai/codex/sdk/go/rpc"
+	"github.com/mel2oo/codex-sdk-go/protocol"
+	"github.com/mel2oo/codex-sdk-go/rpc"
 )
 
 const codexVersionProbeTimeout = 2 * time.Second

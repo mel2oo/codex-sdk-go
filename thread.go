@@ -5,7 +5,7 @@ import (
 	"errors"
 	"log/slog"
 
-	"github.com/openai/codex/sdk/go/rpc"
+	"github.com/mel2oo/codex-sdk-go/rpc"
 )
 
 // Thread represents an active conversation thread.

@@ -12,7 +12,7 @@ This SDK speaks JSON-RPC to `codex app-server`. `NewClient` can spawn a stdio ap
 ## Install
 
 ```bash
-go get github.com/openai/codex/sdk/go
+go get github.com/mel2oo/codex-sdk-go
 ```
 
 ## Quickstart
@@ -26,7 +26,7 @@ import (
     "log/slog"
     "os"
 
-    "github.com/openai/codex/sdk/go"
+    "github.com/mel2oo/codex-sdk-go"
 )
 
 func main() {

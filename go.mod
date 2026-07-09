@@ -1,4 +1,4 @@
-module github.com/openai/codex/sdk/go
+module github.com/mel2oo/codex-sdk-go
 
 go 1.25
 
