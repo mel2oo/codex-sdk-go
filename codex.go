@@ -107,6 +107,9 @@ func appServerArgs(config optionConfig, listen string) []string {
 	if config.wsTokenFile != "" {
 		args = append(args, "--ws-token-file", config.wsTokenFile)
 	}
+	if config.wsTokenSha256 != "" {
+		args = append(args, "--ws-token-sha256", config.wsTokenSha256)
+	}
 	for _, override := range config.configOverrides {
 		args = append(args, "--config", override)
 	}

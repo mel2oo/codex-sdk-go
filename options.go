@@ -25,6 +25,7 @@ type optionConfig struct {
 	unixPath                  string
 	wsAuthMode                string
 	wsTokenFile               string
+	wsTokenSha256             string
 	wsToken                   string
 	header                    http.Header
 	codexPath                 string
@@ -87,6 +88,13 @@ func WithWsAuthMode(mode string) Option {
 func WithWsTokenFile(path string) Option {
 	return optionFunc(func(config *optionConfig) {
 		config.wsTokenFile = path
+	})
+}
+
+// WithWsTokenSha256 sets the capability-token SHA-256 digest for spawned WebSocket app-server processes.
+func WithWsTokenSha256(tokenSha256 string) Option {
+	return optionFunc(func(config *optionConfig) {
+		config.wsTokenSha256 = tokenSha256
 	})
 }
 

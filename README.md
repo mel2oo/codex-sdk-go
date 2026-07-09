@@ -93,6 +93,7 @@ server, err := codex.NewServer(ctx,
     codex.WithWs("ws://127.0.0.1:0"),
     codex.WithWsAuthMode("capability-token"),
     codex.WithWsTokenFile("/tmp/codex-ws-token"),
+    // Or use codex.WithWsTokenSha256("<64-char-hex-digest>") instead of a token file.
     codex.WithCodexPath("codex"),
     codex.WithCwd("/path/to/workspace"),
 )
@@ -106,7 +107,17 @@ client, err := codex.NewClient(ctx, codex.WithWs(server.URL()), codex.WithWsToke
 
 For tests and custom embedding, pass an explicit `rpc.Transport` with `WithTransport`.
 
-See `examples/ws` for a complete runnable example that starts a WebSocket app-server with capability-token auth and connects a WebSocket client to it.
+See `examples/ws` for runnable WebSocket examples. Start the server first:
+
+```bash
+go run ./examples/ws/server
+```
+
+Then run the client in another terminal. The example uses a fixed local URL and capability token.
+
+```bash
+go run ./examples/ws/client
+```
 
 ## Streaming
 

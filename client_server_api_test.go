@@ -14,6 +14,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"reflect"
 	"strings"
 	"testing"
 
@@ -102,6 +103,27 @@ func TestNewServerRequiresExplicitTransport(t *testing.T) {
 	want := "app-server\n--listen\nws://127.0.0.1:0\n--ws-auth\ncapability-token\n--ws-token-file\n/tmp/codex-ws-token\n"
 	if string(args) != want {
 		t.Fatalf("unexpected server args:\n%s", args)
+	}
+}
+
+func TestAppServerArgsWithWsTokenSha256(t *testing.T) {
+	tokenSha256 := "ab" + strings.Repeat("0", 62)
+	args := appServerArgs(optionConfig{
+		wsAuthMode:    "capability-token",
+		wsTokenSha256: tokenSha256,
+	}, "ws://127.0.0.1:0")
+
+	want := []string{
+		"app-server",
+		"--listen",
+		"ws://127.0.0.1:0",
+		"--ws-auth",
+		"capability-token",
+		"--ws-token-sha256",
+		tokenSha256,
+	}
+	if !reflect.DeepEqual(args, want) {
+		t.Fatalf("unexpected args: %#v", args)
 	}
 }
 

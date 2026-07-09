@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "WS Example: Server",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceFolder}/examples/ws/server",
+      "cwd": "${workspaceFolder}",
+      "env": {}
+    },
+    {
+      "name": "WS Example: Client",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceFolder}/examples/ws/client",
+      "cwd": "${workspaceFolder}",
+      "env": {}
+    }
+  ]
+}
